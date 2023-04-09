@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+}
+
+.box {
+    color: #838383;
+    margin-right: 40px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.08), 0 2px 24px rgba(0, 0, 0, 0.08);
+}
+
+.box__active {
+    background-color: #3ee097;
+    color: #fff;
+}
+
+.box:last-child {
+    margin-right: 0;
+}
+
+.box ul {
+    list-style: none;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.box ul li {
+    margin-bottom: 6px;
+}
+
+.box__title {
+    font-weight: 700;
+    margin: 10px 0 20px;
+    font-size: 20px;
+}
+
+.box__subtitle {
+    font-weight: 800;
+    margin-bottom: 14px;
+    font-size: 20px;
+}
+
+.box__list {
+    font-weight: 400;
+}
+
+.box__list--circle {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #838383;
+    margin-left: 10px;
+}
+
+.box__list--check {
+    position: relative;
+    margin-right: 30px;
+}
+
+.box__list--check::after {
+    position: absolute;
+    content: url("./images/check_circle_icon.svg");
+    right: -30px;
+}
+
+.box__bottom {
+    margin-top: 26px;
+}
+
+.box__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2eaf77;
+    position: absolute;
+    left: 30px;
+    top: 25px;
+}
+
+.box__star-white {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+
+.box__star-blue {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .wrapper {
+        margin: 40px auto;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .box {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
